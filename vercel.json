@@ -1,0 +1,14 @@
+{
+  "headers": [
+    {
+      "source": "/sw.js",
+      "headers": [
+        { "key": "Service-Worker-Allowed", "value": "/" },
+        { "key": "Cache-Control", "value": "no-cache" }
+      ]
+    }
+  ],
+  "rewrites": [],
+  "buildCommand": "node scripts/generate-icons.js && next build",
+  "installCommand": "npm install"
+}
